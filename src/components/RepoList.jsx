@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function RepoList({props}) {
   return (
-      <div>
-        <h1>Repos</h1>
+      <div className="repos-container">
+        <h1>Repositórios</h1>
         {
             props.map((repo) => {
                 return  (
-                    <div key={repo.id}>
-                        <h1>{repo.name}</h1>
+                    <div className='repo-box' key={repo.id}>
+                        <h2>{repo.name}</h2>
                         <p>{repo.description}</p>
                     </div>
                 )

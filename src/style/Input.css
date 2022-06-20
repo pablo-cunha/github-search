@@ -1,0 +1,24 @@
+.input-container {
+    background-color: #f0f0f0f0;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00f260, #0575e6) 1;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px #333;
+}
+
+.input-container input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #0f0f0f;
+    outline: none;
+    margin-right: 8px;
+}
+
+.input-container input::placeholder {
+    color: #0f0f0f;
+}

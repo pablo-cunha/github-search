@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    font-family: 'Roboto';
+}
+
+/*Tela Principal */
+.response-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.response-container img {
+    width: 200px
+}
+
+/* CONTAINER NAVEGAÇÃO */
+.nav-container {
+    height: 100px;
+    grid-column: 1/-1;
+    align-items: start;
+    align-content: start;
+    text-align: start;
+}
+
+.back-button {
+    margin-left: 20px;
+    padding: 15px;
+    color: #333;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.425rem;
+}
+
+
+/* INFORMAÇÕES USUARIO */
+.data-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+}
+
+/* USER BOX */ 
+.user-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-container img {
+    border-radius: 100px;
+}
+
+.user-container p {
+    font-size: 1.2rem;
+}
+
+.user-container h1 {
+    margin-bottom: 30px;
+}
+
+.user-container svg {
+    margin-right: 10px;
+}
+
+/*REPO LIST*/
+.repos-container h1 {
+    text-align: center;
+}
+
+.repo-box {
+    height: 120px;
+    background-color: #0FFF50;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.repo-box h2 {
+    padding-top: 10px;
+}
+
+.repo-box h2, .repo-box p {
+    margin-left: 15px;
+}

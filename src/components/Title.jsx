@@ -1,9 +1,10 @@
+import '../style/index.css'
 import React from 'react'
 
 export default function Title() {
   return (
-    <div>
-        <h1><b>Github</b> Search</h1>
+    <div className="font-container">
+        <h1>Github Search</h1>
     </div>
   )
 }
