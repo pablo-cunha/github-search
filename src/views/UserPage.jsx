@@ -6,7 +6,7 @@ import api from "../services/api"
 import RepoList from "../components/RepoList"
 
 export default function Result() {
-  const { login }= useParams()
+  const { login } = useParams()
 
   const [userData, setUserData] = useState({})
   const [userRepos, setRepos] = useState([])
@@ -23,6 +23,7 @@ export default function Result() {
         console.log(response)
       } catch (error) {
         console.log(error)
+        alert("Usuário Inválido.")
       }
     }
     getUserData()
@@ -42,10 +43,10 @@ export default function Result() {
               <FiUser size={18} color="#0f0f0f"/>{userData?.login}
             </p>
             <p>
-              <FiBriefcase size={18} color="#0f0f0f"/>{userData?.company === null ? "Nenhuma" : userData?.company}
+              <FiBriefcase size={18} color="#0f0f0f"/>{userData?.company === null ? "Não informado" : userData?.company}
             </p>
             <p>
-              <FiMapPin size={18} color="#0f0f0f"/>{userData?.location}
+              <FiMapPin size={18} color="#0f0f0f"/>{userData?.location === null ? "Não informado" : userData?.location}
             </p>
             <p>
               <FiArchive size={18} color="#0f0f0f"/>{userData?.public_repos}
